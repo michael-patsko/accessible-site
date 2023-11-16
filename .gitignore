@@ -1,0 +1,9 @@
+# Node modules
+node_modules/
+
+# Eleventy build output
+_site/
+
+# Logs
+logs
+*.log
