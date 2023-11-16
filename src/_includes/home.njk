@@ -12,3 +12,14 @@ layout: base.njk
     </li>
   {% endfor %}
 </ul>
+
+<h2>Guide contents</h2>
+<ul>
+  {% for page in collections.all %}
+    {% if page.data.section == "guide" and page.data.subsection %}
+      <li>
+        <a href="{{ page.url | url }}">{{ page.data.title }}</a>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>
