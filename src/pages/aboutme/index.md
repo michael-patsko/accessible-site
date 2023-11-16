@@ -5,8 +5,7 @@ author: "Michael Patsko"
 datePublished: 2023-11-16
 lastUpdated: 2023-11-16
 section: "aboutme"
-tags:
-  - mainPage
+tags: ["mainPage"]
 ---
 
 This page is about me!
