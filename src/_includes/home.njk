@@ -1,0 +1,14 @@
+---
+layout: base.njk
+---
+<h1>Continuing Care Homepage</h1>
+
+{{ content | safe }}
+
+<ul>
+  {% for page in collections.mainPage %}
+    <li>
+      <a href="{{ page.url | url }}">{{ page.data.title }}</a>
+    </li>
+  {% endfor %}
+</ul>

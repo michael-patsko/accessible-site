@@ -1,5 +1,23 @@
-{% extends "base.njk" %}
-{% block content %}
-  <h1>Continuing Care Guide</h1>
-  <!-- Additional content specific to the Guide section -->
-{% endblock %}
+---
+layout: base.njk
+---
+<h1>Continuing Care Guide</h1>
+
+<h3>Table of Contents</h3>
+<ul>
+  {% for page in collections.all %}
+    {% if page.data.section == "guide" and page.data.subsection %}
+      <li>
+        {% if page.data.title == title %}
+          {{ page.data.title }}
+        {% else %}
+          <a href="{{ page.url | url }}">{{ page.data.title }}</a>
+        {% endif %}
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>
+
+<h2>{{ title }}</h2>
+
+{{ content | safe }}

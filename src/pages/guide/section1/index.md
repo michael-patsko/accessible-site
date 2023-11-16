@@ -1,16 +1,12 @@
 ---
 layout: guide.njk
-title: "section1"
+title: "Section 1"
 author: "Michael Patsko"
 datePublished: 2023-11-16
 lastUpdated: 2023-11-16
-section: "section1"
-subsection: null
+section: "guide"
+subsection: "section1"
 ---
-
-# Title
-
-## Content
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl vel pretium lectus quam id leo. Imperdiet proin fermentum leo vel. Ultrices eros in cursus turpis. Interdum velit euismod in pellentesque massa placerat duis. Commodo nulla facilisi nullam vehicula. Molestie ac feugiat sed lectus vestibulum. Urna porttitor rhoncus dolor purus non enim praesent elementum. Vitae nunc sed velit dignissim sodales. Felis eget velit aliquet sagittis id consectetur purus ut faucibus. Vulputate sapien nec sagittis aliquam malesuada bibendum arcu.
 
