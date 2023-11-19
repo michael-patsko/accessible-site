@@ -5,6 +5,13 @@ layout: base.njk
 
 <h3>Table of Contents</h3>
 <ul>
+  <li>
+    {% if title == "Guide" %}
+      Overview
+      {% else %}
+      <a href="/guide">Overview</a>
+    {% endif %}
+  </li>
   {% for page in collections.all %}
     {% if page.data.section == "guide" and page.data.subsection %}
       <li>
