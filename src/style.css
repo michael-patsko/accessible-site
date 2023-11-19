@@ -76,9 +76,81 @@ textarea:not([rows]) {
 ------------------------ */
 
 /* ------------------------
-  Custom CSS below
+  Base styling
 ------------------------ */
+
+:root {
+  --green: #12664f;
+  --darkgreen: #093429;
+  --orange: #ee964b;
+}
 
 html {
   font-family:  Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0px;
+}
+
+#header {
+  background-color: var(--green);
+  color: white;
+  padding: 6px 0;
+}
+
+#header__logo {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 28px;
+}
+
+/* ------------------------
+  Responsive styling
+------------------------ */
+
+@media (max-width: 768px) { /* For mobile devices */
+  html {
+  font-size: 20px;
+  }
+  main {
+    margin: 0 12px;
+  }
+  #header__content {
+    margin: 0 12px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1023px) { /* For tablet devices */
+  html {
+  font-size: 20px;
+  }
+  main {
+    margin: 0 36px;
+  }
+  #header__content {
+    margin: 0 36px;
+  }
+}
+
+@media (min-width: 1024px) { /* For desktops */
+  html {
+    font-size: 20px;
+  }
+  main {
+    margin: 0 240px;
+  }
+  #header__content {
+    margin: 0 240px;
+  }
+}
+
+/* ------------------------
+  Accessibility styling
+------------------------ */
+
+a:focus, button:focus {
+  background-color: var(--orange);
+  color: black;
+  outline: none;
 }
