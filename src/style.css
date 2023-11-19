@@ -1,3 +1,7 @@
+/* ------------------------
+  RESET - source: https://andy-bell.co.uk/a-more-modern-css-reset/
+------------------------ */
+
 /* Box sizing rules */
 *,
 *::before,
@@ -70,10 +74,6 @@ textarea:not([rows]) {
 :target {
   scroll-margin-block: 5ex;
 }
-
-/* ------------------------
-  RESET - source: https://andy-bell.co.uk/a-more-modern-css-reset/
------------------------- */
 
 /* ------------------------
   Base styling
