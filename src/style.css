@@ -115,10 +115,15 @@ blockquote {
   margin-left: 0;
 }
 
+article img {
+  border-bottom: 8px solid var(--orange);
+}
+
 #header {
   background-color: var(--primary);
   color: white;
   padding: 6px 0;
+  border-bottom: 8px solid var(--orange);
 }
 
 #header__logo {
@@ -177,10 +182,10 @@ blockquote {
 
 @media (max-width: 768px) { /* For mobile devices */
   html {
-  font-size: 18px;
+  font-size: 16px;
   }
   main {
-    margin: 0 12px;
+    margin: 0 16px;
   }
   blockquote {
     padding-left: 20px;

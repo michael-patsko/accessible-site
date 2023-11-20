@@ -26,8 +26,9 @@ layout: base.njk
 </ul>
 <hr class="divider"/>
 <h2>{{ title }}</h2>
-
-{{ content | safe }}
+<article>
+  {{ content | safe }}
+</article>
 <button id="scrollToTop" aria-label="Scroll to top">
   <img src="/assets/up-arrow.png" alt="Top"/>
 </button>
