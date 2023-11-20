@@ -1,6 +1,7 @@
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/style.css");
   eleventyConfig.addPassthroughCopy("src/scripts");
+  eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addCollection("pages", function (collection) {
     return collection.getAllSorted().map(function (item) {
       if (item.inputPath.startsWith("./src/pages/")) {

@@ -134,6 +134,20 @@ blockquote {
   bottom: 20px;
   right: 20px;
   z-index: 100;
+  border: none;
+  background: white;
+  cursor: pointer;
+  padding: 2px;
+  align-content: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 48px;
+}
+
+#scrollToTop img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
 }
 
 .index__header {
@@ -184,7 +198,7 @@ blockquote {
     margin: 0 12px;
   }
   #scrollToTop.show-button {
-    display: block;
+    display: flex;
   }
   .index__header {
     font-size: 20px;
