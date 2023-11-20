@@ -49,7 +49,6 @@ h3, h4 {
 /* A elements that don't have a class get default styles */
 a:not([class]) {
   text-decoration-skip-ink: auto;
-  color: currentColor;
 }
 
 /* Make images easier to work with */
@@ -93,6 +92,21 @@ body {
   margin: 0px;
 }
 
+a {
+  color: var(--green);
+}
+
+a:hover {
+  color: var(--darkgreen);
+}
+
+blockquote {
+  border-left-style: solid;
+  border-left-color: #12664f;
+  border-left-width: 8px;
+  margin-left: 0;
+}
+
 #header {
   background-color: var(--green);
   color: white;
@@ -103,6 +117,7 @@ body {
   text-decoration: none;
   font-weight: 600;
   font-size: 28px;
+  color: white;
 }
 
 /* ------------------------
@@ -116,9 +131,13 @@ body {
   main {
     margin: 0 12px;
   }
+  blockquote {
+    padding-left: 20px;
+  }
   #header__content {
     margin: 0 12px;
   }
+
 }
 
 @media (min-width: 769px) and (max-width: 1023px) { /* For tablet devices */
@@ -127,6 +146,9 @@ body {
   }
   main {
     margin: 0 36px;
+  }
+  blockquote {
+    padding-left: 30px;
   }
   #header__content {
     margin: 0 36px;
@@ -140,6 +162,9 @@ body {
   main {
     margin: 0 240px;
   }
+  blockquote {
+    padding-left: 40px;
+  }
   #header__content {
     margin: 0 240px;
   }
@@ -149,8 +174,16 @@ body {
   Accessibility styling
 ------------------------ */
 
+a:focus {
+  text-decoration-thickness: 4px;
+}
+
 a:focus, button:focus {
   background-color: var(--orange);
   color: black;
   outline: none;
+}
+
+#header__logo:focus {
+  color: black;
 }
