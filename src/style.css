@@ -84,6 +84,12 @@ textarea:not([rows]) {
   --yellow: #F5CB5C;
   --grey: #AFAAB9;
   --orange: #FFBC42;
+
+  --primary: var(--darkblue);
+  --active: var(--green);
+  --focus: var(--yellow);
+  --structure: var(--grey);
+  --emphasis: var(--orange);
 }
 
 html {
@@ -95,22 +101,22 @@ body {
 }
 
 a {
-  color: var(--darkblue);
+  color: var(--primary);
 }
 
 a:hover {
-  color: var(--green);
+  color: var(--active);
 }
 
 blockquote {
   border-left-style: solid;
-  border-left-color: var(--orange);
+  border-left-color: var(--emphasis);
   border-left-width: 8px;
   margin-left: 0;
 }
 
 #header {
-  background-color: var(--darkblue);
+  background-color: var(--primary);
   color: white;
   padding: 6px 0;
 }
@@ -140,7 +146,7 @@ blockquote {
 .divider {
   height: 1px;
   border-width: 0;
-  background-color: var(--grey);
+  background-color: var(--structure);
 }
 
 /* ------------------------
@@ -164,7 +170,7 @@ blockquote {
     font-size: 30px;
   }
   img {
-    max-width: 100%;
+    max-width: 80%;
   }
   #header__content {
     margin: 0 12px;
@@ -191,7 +197,7 @@ blockquote {
     font-size: 36px;
   }
   img {
-    max-width: 80%;
+    max-width: 60%;
   }
   #header__content {
     margin: 0 36px;
@@ -237,7 +243,7 @@ a:focus {
 }
 
 a:focus, button:focus {
-  background-color: var(--yellow);
+  background-color: var(--focus);
   color: black;
   outline: none;
 }
