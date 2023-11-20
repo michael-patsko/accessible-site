@@ -3,11 +3,11 @@ layout: base.njk
 ---
 <h1>Continuing Care Guide</h1>
 
-<h3>Table of Contents</h3>
-<ul>
+<h3 class="index__header">Table of Contents</h3>
+<ul class="index__list">
   {% for page in collections.all %}
     {% if page.data.section == "guide" and page.data.subsection %}
-      <li>
+      <li class="index__list-item">
         {% if page.data.title == title %}
           {{ page.data.title }}
         {% else %}
@@ -17,7 +17,7 @@ layout: base.njk
     {% endif %}
   {% endfor %}
 </ul>
-
+<hr class="divider"/>
 <h2>{{ title }}</h2>
 
 {{ content | safe }}
