@@ -170,7 +170,11 @@ article img {
   margin-right: 5px;
 }
 
-.divider {
+.index__table {
+  margin: 24px 0;
+}
+
+article .divider {
   height: 1px;
   border-width: 0;
   background-color: var(--structure);

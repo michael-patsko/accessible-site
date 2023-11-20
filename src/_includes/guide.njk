@@ -3,27 +3,29 @@ layout: base.njk
 ---
 <h1>Continuing Care Guide</h1>
 
-<h3 class="index__header">Table of Contents</h3>
-<ul class="index__list">
-  <li class="index__list-item">
-    {% if title == "Guide" %}
+<nav aria-label="Navigation" class="index__table">
+  <h3 class="index__header">Table of Contents</h3>
+  <ul class="index__list">
+    <li class="index__list-item">
+      {% if title == "Guide" %}
       Overview
       {% else %}
-      <a href="/guide">Overview</a>
-    {% endif %}
-  </li>
-  {% for page in collections.all %}
-    {% if page.data.section == "guide" and page.data.subsection %}
-      <li class="index__list-item">
-        {% if page.data.title == title %}
-          {{ page.data.title }}
-        {% else %}
-          <a href="{{ page.url | url }}">{{ page.data.title }}</a>
-        {% endif %}
-      </li>
-    {% endif %}
-  {% endfor %}
-</ul>
+        <a href="/guide">Overview</a>
+      {% endif %}
+    </li>
+    {% for page in collections.all %}
+      {% if page.data.section == "guide" and page.data.subsection %}
+        <li class="index__list-item">
+          {% if page.data.title == title %}
+            {{ page.data.title }}
+          {% else %}
+            <a href="{{ page.url | url }}">{{ page.data.title }}</a>
+          {% endif %}
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</nav>
 <hr class="divider"/>
 <h2>{{ title }}</h2>
 <article>
