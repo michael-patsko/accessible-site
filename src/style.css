@@ -128,6 +128,14 @@ blockquote {
   color: white;
 }
 
+#scrollToTop {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+}
+
 .index__header {
   font-weight: 200;
 }
@@ -174,6 +182,9 @@ blockquote {
   }
   #header__content {
     margin: 0 12px;
+  }
+  #scrollToTop.show-button {
+    display: block;
   }
   .index__header {
     font-size: 20px;
