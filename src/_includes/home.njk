@@ -1,25 +1,25 @@
 ---
 layout: base.njk
 ---
-<h1>Continuing Care Homepage</h1>
+<h1>Homepage</h1>
 
 {{ content | safe }}
 
 <ul>
-  {% for page in collections.mainPage %}
-    <li>
-      <a href="{{ page.url | url }}">{{ page.data.title }}</a>
-    </li>
-  {% endfor %}
+    {% for page in collections.mainPage %}
+        <li>
+            <a href="{{ page.url | url }}">{{ page.data.title }}</a>
+        </li>
+    {% endfor %}
 </ul>
 
-<h2>Guide contents</h2>
+<h2>Content</h2>
 <ul>
-  {% for page in collections.all %}
-    {% if page.data.section == "guide" and page.data.subsection %}
-      <li>
-        <a href="{{ page.url | url }}">{{ page.data.title }}</a>
-      </li>
-    {% endif %}
-  {% endfor %}
+    {% for page in collections.all %}
+        {% if page.data.section == "guide" and page.data.subsection %}
+            <li>
+                <a href="{{ page.url | url }}">{{ page.data.title }}</a>
+            </li>
+        {% endif %}
+    {% endfor %}
 </ul>
